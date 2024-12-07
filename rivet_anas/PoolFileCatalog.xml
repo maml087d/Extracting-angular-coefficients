@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="DFCA2545-9B77-EE43-B37B-346210B89291">
+    <physical>
+      <pfn filetype="ROOT_All" name="EVNT.Zjj_LO_pol.merged.pool.root"/>
+    </physical>
+    <logical/>
+  </File>
+
+</POOLFILECATALOG>
