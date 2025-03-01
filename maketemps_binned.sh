@@ -1,14 +1,14 @@
 #! /bin/bash
-# makes templates
+# makes templates and writes them as json in the folder templates/name?
 
 # settings
-cuts=true
-fullrun=true
+cuts=false
+fullrun=false
 compile=true
-name=Zjj_inclusive_temps_cuts
-analysis=/data/horse/ws/maml087d-workspace/rivet_anas/templates_inclusive.cc
+name=Zjj_inclusive_temps_nocuts_lab
+analysis=/data/horse/ws/maml087d-workspace/rivet_anas/templates_inclusive_labframe.cc
 ori_runfile=/data/horse/ws/maml087d-workspace/rivet_anas/run_ana.py
-ptbinfile=/data/horse/ws/maml087d-workspace/rivet_anas/data/inclusive/ptbins.txt
+ptbinfile=/data/horse/ws/maml087d-workspace/rivet_anas/data/labframe/inclusive/ptbins.txt #TODO when changing to inclusive/ptbinned
 
 yodaname=$name.yoda.gz
 # creating copy of the original run file for this run and creating logger

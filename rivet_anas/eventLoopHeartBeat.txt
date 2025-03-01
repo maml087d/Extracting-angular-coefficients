@@ -1,1 +1,1 @@
-  done processing event #1000000, run #100000 1000000 events read so far  <<<===
+  done processing event #10000, run #100000 10000 events read so far  <<<===

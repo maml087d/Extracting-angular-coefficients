@@ -31,9 +31,11 @@ def read_histogram(file, histname, outpath='/data/horse/ws/maml087d-workspace/da
     if isinstance(hist, yoda.core.Histo1D):
         outdict["bins"] = list(hist.xEdges())
         outdict["yvals"] = list(hist.yVals())
+        outdict["yerrs"] = list(hist.yErrs())
     elif isinstance(hist, yoda.core.Histo2D):
         outdict["bins"] = [list(hist.xEdges()), list(hist.yEdges())]
         outdict["zvals"] = list(hist.zVals())
+        outdict["zerrs"] = list(hist.zErrs())
     else: print("not a 1DHisto or 2DHisto")
     outfilename = outpath + '/' +histname + '.json'
     i = 1

@@ -1,17 +1,22 @@
 #! /bin/bash
 # extracting angular coeffs
+# writing the coeff file.txt and extracting data histograms from yoda to json in outpath/histo_nocuts // outpath/histo_cuts
+
 set -euo pipefail
+
 # settings
-cuts=false
-fullrun=true
-yodaname=Zjj_ptbin_data_nocuts.yoda.gz
+cuts=true
+fullrun=false
+yodaname=Zjj_inclusive_data_cuts_lab.yoda.gz
 
 ori_runfile=/data/horse/ws/maml087d-workspace/rivet_anas/run_ana.py
-analysis=/data/horse/ws/maml087d-workspace/rivet_anas/angcoeff.cc
+analysis=/data/horse/ws/maml087d-workspace/rivet_anas/angcoeff_inclusive_labframe.cc
 # logfile=/data/horse/ws/maml087d-workspace/logger.txt
 
-outpath=/data/horse/ws/maml087d-workspace/rivet_anas/data/ptbinned
-ptbinfile=/data/horse/ws/maml087d-workspace/rivet_anas/data/ptbinned/ptbins.txt
+outpath=/data/horse/ws/maml087d-workspace/rivet_anas/data/labframe/inclusive
+# IMPORTANT: outpath/histo_cuts or outpath/histo_nocuts must exist
+
+ptbinfile=/data/horse/ws/maml087d-workspace/rivet_anas/data/labframe/inclusive/ptbins.txt
 
 # creating copy of the original run file for this run and creating logger
 declare -i f=0
