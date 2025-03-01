@@ -1,3 +1,8 @@
 debugdata/
 temp/
-templates_flatten.cc Zjj_flatten_temps_nocuts.yoda.gz
+*test*
+Zjj_temp_*
+
+Zjj_newvars*
+Zjj_xsec.yoda.gz
+Zjj_data_2d_*
