@@ -17,24 +17,24 @@ weird solutions to be aware of mostly because C++ doesnt support JSON:
 - templates/*.cc reads coeffs from a specified path !this will **not** be adjusted by the bash scripts --> need to check path!
 	- coeffs.txt has the following form to be read correctly: each line = one coeff A_ij where i is the coeff number and j is the ptbinnumber and then the file has to be: 
 
-A00
-A01
-A10
-A11
-A20
-A21
-A30
-A31
-A40
-A41
-A50
-A51
-A60
-A61
-A70
-A71
-A80
-A81
+A00\
+A01\
+A10\
+A11\
+A20\
+A21\
+A30\
+A31\
+A40\
+A41\
+A50\
+A51\
+A60\
+A61\
+A70\
+A71\
+A80\
+A81\
 
 A8 == xsec in the ptbin
 
